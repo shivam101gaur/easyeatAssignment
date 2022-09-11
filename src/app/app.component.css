@@ -1,0 +1,83 @@
+.container {
+  width: 50%;
+  margin: auto;
+  border: solid 2px teal;
+  border-radius: 15px;
+  padding: 1.5%;
+  height: 95% !important;
+}
+label {
+  font-weight: bold;
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 1.5%;
+}
+input[type=radio]{
+  float:left;
+ }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 15px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 15px;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.submit_btn {
+  background-color: rgb(101, 120, 72);
+  color: white;
+  border-radius: 5px;
+  min-width: 70px;
+  padding: 0.5%;
+  cursor: pointer;
+  border: none;
+  font-size: large;
+}
+.submit_btn:hover {
+  background-color: green;
+  color: black;
+  border: rgb(132, 178, 63);
+}
+.submit_btn:disabled {
+  background-color: rgb(171, 171, 171);
+  color: grey;
+  pointer-events: none;
+}
+.radioContainer {
+  display: flex;
+  margin-bottom: 1.5%;
+}
+.error{
+  color: red;
+  font-size: small;
+}
